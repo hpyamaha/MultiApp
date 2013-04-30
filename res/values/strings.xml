@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MultipleApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="buttonsi">SI Finder</string>
+    <string name="buttonPal">Palindrome Finder</string>
+    <string name="buttonSort">Sorter</string>
+    <string name="buttonQuad">Quadratic Finder</string>
+    <string name="buttonMul">Multiplication</string>
+    <string name="optitle">Choose one option</string>
+    <string name="phint">Enter the value of Principle</string>
+    <string name="thint">Enter the value of Time</string>
+    <string name="rhint">Enter the value of Rate</string>
+    <string name="percent">%</string>
+    <string name="time">Years</string>
+    <string name="money">Rs</string>
+    <string name="button">Find SI</string>
+    <string name="titleSI">Find the Simple Interest</string>
+    <string name="reset">Reset</string>
+    <string name="result">Result</string>
+    <string name="titlesort">Enter the list of 5 names</string>
+    <string name="buttonsort">Sort</string>
+    <string name="title">Find the roots of quadratic equation</string>
+    <string name="xone">x2 + </string>
+    <string name="xtwo">x + </string>
+    <string name="hint">a</string>
+    <string name="enterhint">Enter the values of a, b, c</string>
+    <string name="hint2">b</string>
+    <string name="hint3">c</string>
+    <string name="buttonFind">Find roots</string>
+    <string name="Delta">Delta Finder</string>
+    <string name="Root">Root Finder</string>
+    <string name="text">hello</string>
+    <string name="author">By; K.Hariprasad</string>
+    <string name="sorthint">Enter the name</string>
+    <string name="buttonsorter">Sort the list</string>
+    
+</resources>
