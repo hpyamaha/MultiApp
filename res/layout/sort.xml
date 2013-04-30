@@ -55,7 +55,7 @@
         android:text="@string/buttonsorter" />
 
     <Button
-        android:id="@+id/buttonReset"
+        android:id="@+id/buttonReseter"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

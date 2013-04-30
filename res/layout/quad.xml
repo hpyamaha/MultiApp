@@ -15,7 +15,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="16dp" >
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical" >
@@ -33,76 +33,86 @@
                 android:layout_marginTop="18dp"
                 android:text="@string/enterhint" />
 
-            <LinearLayout
-                android:id="@+id/linearLayout1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="21dp" >
-
-                <EditText
-                    android:id="@+id/input1"
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="18dp"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="@string/hint" >
-
-                    <requestFocus />
-                </EditText>
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/xone"
-                    android:textSize="24sp" />
-
-                <EditText
-                    android:id="@+id/input2"
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="@string/hint2" />
-
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/xtwo"
-                    android:textSize="24sp" />
-
-                <EditText
-                    android:id="@+id/input3"
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="@string/hint3" />
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/buttonRoot"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/Root" />
-
-            <Button
-                android:id="@+id/buttonDelta"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:text="@string/Delta" />
-
             <ScrollView
                 android:id="@+id/scrollView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" >
             </ScrollView>
-        </LinearLayout>
+        </RelativeLayout>
+
     </ScrollView>
+
+    <Button
+        android:id="@+id/buttonDelta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonRoot"
+        android:layout_below="@+id/buttonRoot"
+        android:layout_marginTop="34dp"
+        android:text="@string/Delta" />
+
+    <Button
+        android:id="@+id/buttonRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/scrollView2"
+        android:layout_below="@+id/scrollView2"
+        android:layout_marginTop="165dp"
+        android:text="@string/Root" />
+
+    <EditText
+        android:id="@+id/input3"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/buttonRoot"
+        android:layout_below="@+id/scrollView2"
+        android:layout_marginTop="57dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/hint3" />
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/input3"
+        android:layout_alignBottom="@+id/input3"
+        android:layout_alignLeft="@+id/scrollView2"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/hint" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/input3"
+        android:layout_toLeftOf="@+id/input3"
+        android:layout_weight="1"
+        android:text="@string/xtwo"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/input2"
+        android:layout_toRightOf="@+id/input1"
+        android:layout_weight="1"
+        android:text="@string/xone"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toLeftOf="@+id/textView4"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/hint2" >
+
+        <requestFocus />
+    </EditText>
 
 </RelativeLayout>
