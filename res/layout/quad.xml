@@ -61,7 +61,7 @@
         android:text="@string/Root" />
 
     <EditText
-        android:id="@+id/input3"
+        android:id="@+id/inputc"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/buttonRoot"
@@ -72,38 +72,7 @@
         android:hint="@string/hint3" />
 
     <EditText
-        android:id="@+id/input1"
-        android:layout_width="70dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/input3"
-        android:layout_alignBottom="@+id/input3"
-        android:layout_alignLeft="@+id/scrollView2"
-        android:layout_weight="1"
-        android:ems="10"
-        android:hint="@string/hint" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/input3"
-        android:layout_toLeftOf="@+id/input3"
-        android:layout_weight="1"
-        android:text="@string/xtwo"
-        android:textSize="24sp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/input2"
-        android:layout_toRightOf="@+id/input1"
-        android:layout_weight="1"
-        android:text="@string/xone"
-        android:textSize="24sp" />
-
-    <EditText
-        android:id="@+id/input2"
+        android:id="@+id/inputb"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView4"
@@ -114,5 +83,35 @@
 
         <requestFocus />
     </EditText>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/inputc"
+        android:layout_toLeftOf="@+id/inputc"
+        android:layout_weight="1"
+        android:text="@string/xtwo"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/inputb"
+        android:layout_toRightOf="@+id/inputa"
+        android:layout_weight="1"
+        android:text="@string/xone"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/inputa"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/scrollView2"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/hint" />
 
 </RelativeLayout>

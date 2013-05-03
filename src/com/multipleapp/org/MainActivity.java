@@ -33,7 +33,7 @@ public class MainActivity extends Activity implements android.view.View.OnClickL
 	String count = "";
 
 	int len;
-	EditText uname;
+	EditText unameMul;
 
 	Button buttonShow;
 
@@ -93,9 +93,10 @@ public class MainActivity extends Activity implements android.view.View.OnClickL
 
 			this.setContentView(R.layout.main);
 			result = (TextView) findViewById(R.id.resulter);
+			result.setText(si);
 
 		}
-			result.setText(si);
+
 			break;
 		case R.id.buttonReseters: {
 			p.setText("");
@@ -112,11 +113,9 @@ public class MainActivity extends Activity implements android.view.View.OnClickL
 			input3 = (EditText) findViewById(R.id.input3);
 			input4 = (EditText) findViewById(R.id.input4);
 			input5 = (EditText) findViewById(R.id.input5);
-			// result = (TextView) findViewById(R.id.resulter);
+
 			Button buttonSort = (Button) findViewById(R.id.buttonmake);
 			Button buttonReseter = (Button) findViewById(R.id.buttonReseter);
-
-			// result.setText("");
 
 			buttonSort.setOnClickListener(this);
 			buttonReseter.setOnClickListener(this);
@@ -164,7 +163,7 @@ public class MainActivity extends Activity implements android.view.View.OnClickL
 		case R.id.buttonPal: {
 			setContentView(R.layout.pal);
 			buttonCheck = (Button) findViewById(R.id.buttonCheck);
-			input1 = (EditText) findViewById(R.id.input1);
+			input12 = (EditText) findViewById(R.id.input12);
 
 			buttonCheck.setOnClickListener(this);
 
@@ -172,18 +171,18 @@ public class MainActivity extends Activity implements android.view.View.OnClickL
 			break;
 		case R.id.buttonCheck: {
 			String uname12;
-			uname12 = input1.getText().toString();
+			uname12 = input12.getText().toString();
 
-			len = uname1.length();
+			len = uname12.length();
 
-			input1.setText("");
+			input12.setText("");
 
 			for (int i = len - 1; i >= 0; i--) {
-				String c = uname1;
+				String c = uname12;
 				count = count + c.charAt(i);
 
 			}
-			if (uname1.equalsIgnoreCase(count)) {
+			if (uname12.equalsIgnoreCase(count)) {
 				ressult = "Palindrome";
 			} else {
 				ressult = "Not a Palindrome";
@@ -201,9 +200,9 @@ public class MainActivity extends Activity implements android.view.View.OnClickL
 		case R.id.buttonQuad: {
 			setContentView(R.layout.quad);
 
-			a = (EditText) findViewById(R.id.input1);
-			b = (EditText) findViewById(R.id.input2);
-			c = (EditText) findViewById(R.id.input3);
+			a = (EditText) findViewById(R.id.inputa);
+			b = (EditText) findViewById(R.id.inputb);
+			c = (EditText) findViewById(R.id.inputc);
 			delta = (Button) findViewById(R.id.buttonDelta);
 			root = (Button) findViewById(R.id.buttonRoot);
 
@@ -277,18 +276,17 @@ public class MainActivity extends Activity implements android.view.View.OnClickL
 		case R.id.buttonMul: {
 			setContentView(R.layout.multiplication);
 
-			uname = (EditText) findViewById(R.id.inputMul);
+			unameMul = (EditText) findViewById(R.id.inputMul);
 
 			buttonShow = (Button) findViewById(R.id.buttonShow);
-			
 
 			buttonShow.setOnClickListener(this);
-			buttonReset.setOnClickListener(this);
+			// buttonReset.setOnClickListener(this);
 		}
 			break;
 		case R.id.buttonShow: {
 
-			no = uname.getText().toString();
+			no = unameMul.getText().toString();
 			n = (int) (no.charAt(0));
 			if (n >= 48 && n <= 57) {
 
@@ -299,10 +297,9 @@ public class MainActivity extends Activity implements android.view.View.OnClickL
 				 * num=num + (int)(no.charAt(j)); if(l>=1) num=num*10; }
 				 */
 
-				int re;
-
 				this.setContentView(R.layout.main);
 				result = (TextView) findViewById(R.id.resulter);
+				int re;
 
 				for (int i = 1; i <= 10; i++) {
 
@@ -319,7 +316,7 @@ public class MainActivity extends Activity implements android.view.View.OnClickL
 			break;
 
 		}
-		
+
 	}
 
 	@Override

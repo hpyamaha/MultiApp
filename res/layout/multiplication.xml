@@ -14,26 +14,24 @@
         android:layout_height="wrap_content"
         android:text="@string/titleMul" />
 
+    <Button
+        android:id="@+id/buttonShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/inputMul"
+        android:layout_marginTop="20dp"
+        android:text="@string/buttonMulti" 
+    	android:onClick="buttonShow" />
+
     <EditText
         android:id="@+id/inputMul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
         android:layout_below="@+id/textView1"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="@string/hintMul" >
-
-        <requestFocus />
-    </EditText>
-
-    <Button
-        android:id="@+id/buttonShow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/inputMul"
-        android:layout_below="@+id/inputMul"
-        android:layout_marginTop="24dp"
-        android:text="@string/buttonMulti" />
+        android:hint="@string/hintMul" />
 
 </RelativeLayout>
