@@ -26,7 +26,8 @@
         android:layout_alignRight="@+id/buttonSI"
         android:layout_below="@+id/buttonSI"
         android:layout_marginTop="18dp"
-        android:text="@string/buttonSort" />
+        android:text="@string/buttonSort" 
+        android:onClick="sorter"/>
 
     <Button
         android:id="@+id/buttonMul"
@@ -35,7 +36,8 @@
         android:layout_alignBaseline="@+id/buttonSort"
         android:layout_alignBottom="@+id/buttonSort"
         android:layout_alignLeft="@+id/buttonPal"
-        android:text="@string/buttonMul" />
+        android:text="@string/buttonMul" 
+        android:onClick="MulTable"/>
 
     <Button
         android:id="@+id/buttonPal"
@@ -43,7 +45,8 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/buttonSort"
         android:layout_toRightOf="@+id/buttonSI"
-        android:text="@string/buttonPal" />
+        android:text="@string/buttonPal" 
+        android:onClick="Pal"/>
 
     <Button
         android:id="@+id/buttonSI"
@@ -53,7 +56,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="17dp"
         android:layout_marginTop="74dp"
-        android:text="@string/buttonsi" />
+        android:text="@string/buttonsi" 
+        android:onClick="siFinder" />
 
     <Button
         android:id="@+id/buttonQuad"
@@ -61,7 +65,8 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/buttonSort"
         android:layout_alignTop="@+id/scrollView1"
-        android:text="@string/buttonQuad" />
+        android:text="@string/buttonQuad" 
+        android:onClick="Quad"/>
 
     <TextView
         android:id="@+id/textView1"

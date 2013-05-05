@@ -34,4 +34,14 @@
         android:ems="10"
         android:hint="@string/hintMul" />
 
+    <Button
+        android:id="@+id/buttonRES"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonShow"
+        android:layout_alignBottom="@+id/buttonShow"
+        android:layout_alignRight="@+id/inputMul"
+        android:text="@string/reset" />
+
 </RelativeLayout>

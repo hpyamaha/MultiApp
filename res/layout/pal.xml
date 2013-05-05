@@ -19,12 +19,11 @@
         android:id="@+id/input12"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignLeft="@+id/buttonCheck"
         android:layout_below="@+id/textView1"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="29dp"
         android:ems="10"
-        android:hint="@string/hint1"
-        android:textSize="24sp" >
+        android:hint="@string/hint1" >
 
         <requestFocus />
     </EditText>
@@ -33,9 +32,9 @@
         android:id="@+id/buttonCheck"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/input12"
+        android:layout_alignLeft="@+id/textView1"
         android:layout_below="@+id/input12"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="33dp"
         android:text="@string/check" />
 
 </RelativeLayout>
