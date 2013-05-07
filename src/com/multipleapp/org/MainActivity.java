@@ -56,28 +56,28 @@ public class MainActivity extends Activity {
 	}
 
 	public void siFinder(View view) {
-		Intent intent = new Intent(this, SIFinder.class);
+		Intent intent = new Intent(this, SIActivity.class);
 		this.startActivity(intent);
 
 	}
 
 	public void sorter(View view) {
-		Intent intent = new Intent(this, SortActivity.class);
+		Intent intent = new Intent(this, SortingActivity.class);
 		this.startActivity(intent);
 	}
 
 	public void MulTable(View view) {
-		Intent intent = new Intent(this, MultiplicationActivity.class);
+		Intent intent = new Intent(this, MultiplyActivity.class);
 		this.startActivity(intent);
 	}
 
 	public void Quad(View view) {
-		Intent intent = new Intent(this, QuadActivity.class);
+		Intent intent = new Intent(this, QuadraticActivity.class);
 		this.startActivity(intent);
 	}
 
 	public void Pal(View view) {
-		Intent intent = new Intent(this, PalActivity.class);
+		Intent intent = new Intent(this, PalindromeActivity.class);
 		this.startActivity(intent);
 	}
 

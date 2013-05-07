@@ -39,8 +39,15 @@
     <string name="check">Check</string>
     <string name="text">Text View</string>
     <string name="author">By : Hari Hara Sudhan &amp; Hariprasad</string>
-	<string name="titleMul">Multipication Table</string>
+    <string name="titleMul">Multipication Table</string>
     <string name="hintMul">Enter the value</string>
     <string name="buttonMulti">Show Table</string>
     <string name="resetbutton">Reset</string>
+    <string name="title_activity_multiplication">MultiplicationActivity</string>
+    <string name="title_activity_multiply">MultiplyActivity</string>
+    <string name="title_activity_si">SIActivity</string>
+    <string name="title_activity_palindrome">PalindromeActivity</string>
+    <string name="title_activity_quadratic">QuadraticActivity</string>
+    <string name="title_activity_sorting">SortingActivity</string>
+
 </resources>

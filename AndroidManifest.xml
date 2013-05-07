@@ -22,6 +22,48 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.multipleapp.org.MultiplicationActivity" >
+        </activity>
+        <activity
+            android:name="com.multipleapp.org.MultiplyActivity"
+            android:label="@string/title_activity_multiply"
+            android:parentActivityName="com.multipleapp.org" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.multipleapp.org.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.multipleapp.org.SIActivity"
+            android:label="@string/title_activity_si"
+            android:parentActivityName="com.multipleapp.org" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.multipleapp.org" />
+        </activity>
+        <activity
+            android:name="com.multipleapp.org.PalindromeActivity"
+            android:label="@string/title_activity_palindrome"
+            android:parentActivityName="com.multipleapp.org" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.multipleapp.org" />
+        </activity>
+        <activity
+            android:name="com.multipleapp.org.QuadraticActivity"
+            android:label="@string/title_activity_quadratic"
+            android:parentActivityName="com.multipleapp.org" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.multipleapp.org" />
+        </activity>
+        <activity
+            android:name="com.multipleapp.org.SortingActivity"
+            android:label="@string/title_activity_sorting"
+            android:parentActivityName="com.multipleapp.org" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.multipleapp.org" />
+        </activity>
     </application>
 
 </manifest>
