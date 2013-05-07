@@ -19,6 +19,7 @@ public class SortActivity extends Activity implements android.view.View.OnClickL
 	int i, j;
 	String temp;
 	TextView Result;
+
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		this.setContentView(R.layout.main);
@@ -36,29 +37,32 @@ public class SortActivity extends Activity implements android.view.View.OnClickL
 
 	@Override
 	public void onClick(View arg0) {
+		switch (arg0.getId()) {
+		case R.id.buttonSort: {
+			a[0] = input1.getText().toString();
+			a[1] = input2.getText().toString();
+			a[2] = input3.getText().toString();
+			a[3] = input4.getText().toString();
+			a[4] = input5.getText().toString();
 
-		a[0] = input1.getText().toString();
-		a[1] = input2.getText().toString();
-		a[2] = input3.getText().toString();
-		a[3] = input4.getText().toString();
-		a[4] = input5.getText().toString();
+			for (i = 0; i < 5; i++) {
+				for (j = 0; j < 4; j++) {
+					if (a[j].compareToIgnoreCase(a[j + 1]) >= 1) {
+						temp = a[j];
+						a[j] = a[j + 1];
+						a[j + 1] = temp;
+					}
 
-		for (i = 0; i < 5; i++) {
-			for (j = 0; j < 4; j++) {
-				if (a[j].compareToIgnoreCase(a[j + 1]) >= 1) {
-					temp = a[j];
-					a[j] = a[j + 1];
-					a[j + 1] = temp;
 				}
-
 			}
-		}
-		this.setContentView(R.layout.main);
-		Result = (TextView) findViewById(R.id.resulter);
-		
-		for(int i=0;i<5;i++)
-			Result.setText(a[i]);
-			
-	}
+			this.setContentView(R.layout.main);
+			Result = (TextView) findViewById(R.id.resulter);
 
+			for (int i = 0; i < 5; i++)
+				Result.setText(a[i]);
+
+		}
+
+		}
+	}
 }
